@@ -1,4 +1,5 @@
 import React from 'react'
+import Post from '../Card/Post'
 
 type TestProps ={
     posts:{
@@ -11,12 +12,12 @@ type TestProps ={
 
 const Test = (props:TestProps) => {
 
-    console.log(props.posts);
+    
     
 
     return (
         <div>
-            
+           ,{props.posts.map((post,index)=><Post post={post} />)} 
         </div>
     )
 }
