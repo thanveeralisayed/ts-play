@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card,Button } from 'react-bootstrap';
 
 
 type postProps = {
@@ -21,6 +21,7 @@ const Post = (props: postProps) => {
                     <Card.Text>
                        {props.post.body}
                     </Card.Text>
+                    <Button variant="primary" >Submit</Button>
                 </Card.Body>
             </Card>
         </div>
