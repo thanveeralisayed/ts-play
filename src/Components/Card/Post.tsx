@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card,Button } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
+import Buttc from '../ButtonCom/Buttc';
 
 
 type postProps = {
@@ -21,7 +22,9 @@ const Post = (props: postProps) => {
                     <Card.Text>
                        {props.post.body}
                     </Card.Text>
-                    <Button variant="primary" >Submit</Button>
+                    <Buttc btnHandler={(event,id)=>{
+                        console.log('btn clicked',event,id);
+                    }} />
                 </Card.Body>
             </Card>
         </div>
