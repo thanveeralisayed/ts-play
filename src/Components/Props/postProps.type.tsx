@@ -5,6 +5,10 @@ type post = {
     body: String
 }
 
+export type TestProps = {
+    posts: post[]
+}
+
 
 export type postProps = {
     post: post

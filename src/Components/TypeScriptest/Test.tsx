@@ -1,15 +1,8 @@
 import React, { useState } from 'react'
 import Post from '../Card/Post'
 import InputC from '../InputCom/InputC'
+import { TestProps } from '../Props/postProps.type'
 
-type TestProps = {
-    posts: {
-        userId: Number,
-        id: Number,
-        title: String,
-        body: String
-    }[]
-}
 
 const Test = (props: TestProps) => {
 
